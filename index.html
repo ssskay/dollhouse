@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dollhouse Examples</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#eef0ef;--panel:#fff;--fg:#1f2523;--muted:#5d6763;--line:#d5dbd8;--glow:#ff9f1c;--chip:#e4e9e7;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;--f-body:"Atkinson Hyperlegible",system-ui,sans-serif;--f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161a19;--panel:#1f2523;--fg:#e8ecea;--muted:#9aa5a0;--line:#323a37;--chip:#2a312f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161a19;--panel:#1f2523;--fg:#e8ecea;--muted:#9aa5a0;--line:#323a37;--chip:#2a312f;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 var(--f-body)}
+main{width:min(100% - 32px,1200px);margin:0 auto;padding:32px 0 56px}
+h1{font:800 clamp(28px,4vw,42px)/1.1 var(--f-display);margin:0 0 8px;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:64ch;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+a.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;color:inherit;text-decoration:none}
+a.card:hover{border-color:var(--muted)}
+a.card:focus-visible{outline:2px solid var(--glow);outline-offset:3px}
+.pic{position:relative}
+.card .map{width:100%;aspect-ratio:950/664;object-fit:cover;background:var(--chip);display:block}
+.card .photo{position:absolute;right:12px;bottom:12px;width:38%;aspect-ratio:4/3;object-fit:cover;border:3px solid #fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px}
+.eyebrow{font:600 11.5px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card h2{font:800 21px var(--f-display);margin:0}
+.card p{margin:0}
+.glow{align-self:flex-start;margin-top:4px;font:700 13px var(--f-body);background:var(--glow);color:#1f2523;padding:3px 10px;border-radius:999px}
+.foot{margin-top:28px;color:var(--muted);font-size:15px}
+.foot a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <h1>Dollhouse examples</h1>
+  <p class="lede">Five invented spaces, built with the same viewer. Different sizes, different layouts, and a different list that glows when you open each one. Each spot has an example photo too, the kind you'd take on your phone. None of it is anyone's real stuff, and the photos are AI-generated.</p>
+  <div class="grid">
+    <a class="card" href="spaces/1-household-10x10/index.html">
+      <div class="pic"><img class="map" src="docs/1-household-10x10.png" alt="3D view of a 10 by 10 storage unit with two metal shelves, furniture and holiday bins"><img class="photo" src="spaces/1-household-10x10/photos/door.jpg" alt="Example photo from the door"></div>
+      <div class="body"><div class="eyebrow">10×10 storage unit</div><h2>The Household Unit</h2>
+        <p>After a move: an emergency shelf by the door, hand-me-downs promised to the neighbors, Thanksgiving folding chairs, moving boxes nobody opened.</p>
+        <span class="glow">Glows: Grab next trip</span></div>
+    </a>
+    <a class="card" href="spaces/2-city-5x10/index.html">
+      <div class="pic"><img class="map" src="docs/2-city-5x10.png" alt="3D view of a long narrow 5 by 10 storage unit with a shelf down one wall"><img class="photo" src="spaces/2-city-5x10/photos/door.jpg" alt="Example photo from the door"></div>
+      <div class="body"><div class="eyebrow">5×10 storage unit</div><h2>The City Apartment Overflow</h2>
+        <p>Long and narrow, one shelf down the right wall and an aisle that has to stay clear. Winter coats, skis, the bike, the guitar on pause.</p>
+        <span class="glow">Glows: Season swap</span></div>
+    </a>
+    <a class="card" href="spaces/3-between-homes-10x20/index.html">
+      <div class="pic"><img class="map" src="docs/3-between-homes-10x20.png" alt="3D view of a deep 10 by 20 storage unit packed with boxes and furniture"><img class="photo" src="spaces/3-between-homes-10x20/photos/door.jpg" alt="Example photo from the door"></div>
+      <div class="body"><div class="eyebrow">10×20 storage unit</div><h2>Between Homes</h2>
+        <p>A whole house parked for four months. Boxes by room, the piano on a dolly, and a move-in day checklist in truck-loading order.</p>
+        <span class="glow">Glows: Unload first</span></div>
+    </a>
+    <a class="card" href="spaces/4-two-car-garage/index.html">
+      <div class="pic"><img class="map" src="docs/4-two-car-garage.png" alt="3D view of a two-car garage with one car parked and the other bay full"><img class="photo" src="spaces/4-two-car-garage/photos/door.jpg" alt="Example photo from the door"></div>
+      <div class="body"><div class="eyebrow">Two-car garage</div><h2>The Two-Car Garage</h2>
+        <p>One bay full of stuff, a pegboard, an overhead rack above the car, and storm panels labelled by window.</p>
+        <span class="glow">Glows: Storm prep</span></div>
+    </a>
+    <a class="card" href="spaces/5-hall-closet/index.html">
+      <div class="pic"><img class="map" src="docs/5-hall-closet.png" alt="3D view of a small hall closet with shelves, coats and a red go-bag"><img class="photo" src="spaces/5-hall-closet/photos/door.jpg" alt="Example photo from the door"></div>
+      <div class="body"><div class="eyebrow">Hall closet</div><h2>The Hall Closet</h2>
+        <p>Five feet wide. Guest bedding up high, coats on the rod, and the go-bag on the floor where you can grab it in the dark.</p>
+        <span class="glow">Glows: Grab and go</span></div>
+    </a>
+  </div>
+  <p class="foot">Make your own: copy <code>spaces/_template</code> and describe your space to an AI with <code>intake/SKILL.md</code>. Details in the README. Made by <a href="https://sarakay.me">Sara Kay</a>.</p>
+</main>
+</body>
+</html>
