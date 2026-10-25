@@ -2,6 +2,8 @@
 
 A clickable 3D map of a storage unit, closet, garage or basement, showing what's on every shelf. It's for the things that matter but you don't need every day: the emergency kit, the baby gear you promised the neighbors, the folding chairs that come out once a year, the tax records. You build it by talking through the space with an AI. No tape measure, no floor-plan app.
 
+**Try it in your browser:** [ssskay.github.io/dollhouse](https://ssskay.github.io/dollhouse/)
+
 ![The household example: a 10×10 storage unit with the shelves holding the things to grab glowing](docs/1-household-10x10.png)
 
 - **Find anything.** Type part of a name and the shelf it's on lights up.
