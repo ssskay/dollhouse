@@ -4,7 +4,7 @@ A clickable 3D map of a storage unit, closet, garage or basement, showing what's
 
 **Try it in your browser:** [ssskay.github.io/dollhouse](https://ssskay.github.io/dollhouse/)
 
-![The household example: a 10×10 storage unit with the shelves holding the things to grab glowing](docs/1-household-10x10.png)
+![Walkthrough: the examples gallery, finding the bins saved for the neighbors, a shelf turning to face you with every level labelled, a spot's photo, the Plan walkway, then the garage's storm-prep list and the hall closet's go-bag](docs/walkthrough.gif)
 
 - **Find anything.** Type part of a name and the shelf it's on lights up.
 - **Grab next trip.** Mark things you need soon and their shelves glow when you open it, so a trip to the unit is a grab instead of a dig. The glowing list is configurable (a reseller can make it "sold, not shipped").
